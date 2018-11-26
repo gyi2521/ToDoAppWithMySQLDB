@@ -1,0 +1,102 @@
+body{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/40/Mont_Blanc_depuis_Chamonix.JPG);
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  background-attachment: fixed;
+}
+
+.container{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding:64px 0px 30px 34px;
+  width: 300px;
+  background-color: #eee;
+  opacity: 0.9;
+}
+
+
+p{
+  word-wrap: break-word;
+  border-bottom: 1.5px solid rgb(211, 209, 209); 
+}
+
+input{
+  position: absolute;
+  bottom: 30px;
+  border: 0;
+  border-bottom: 1.5px solid rgb(211, 209, 209);
+  width: 80%;
+  background-color: #eee;
+  opacity: 0.6;
+  font-size: 28px; 
+}
+
+input.new-item:focus {
+  outline: none;
+}
+
+.list-group-item > button.delete,
+.list-group-item > button.complete {
+  float: left;
+  height: 25px;
+  margin-left: -25px;
+  
+}
+
+.title{
+  width:300px;
+  position: relative;
+  top: 85px;
+  left: 30px;
+  color: white;
+}
+
+h1{
+  font-weight: 100;
+  font-size: 5vw;
+  opacity: .8;
+  letter-spacing: 3px;
+}
+
+h2{
+  font-family: sans-serif;
+  font-size: 2.5vw;
+  font-weight: bold;
+  opacity: .9;
+}
+.edit {
+  width: 100%;
+}
+
+button{
+  outline:none;
+  background: none;
+  border:none;
+  padding:none;
+}
+
+.btn-style{
+  font-size: 16px;
+  font-weight: bolder;
+  vertical-align: bottom;
+  color: rgb(124, 123, 123);
+
+}
+
+@media only screen and (max-width: 400px) {
+  .list{
+    margin-top: 50px;
+  }
+  
+  .new{
+    position: fixed;
+    top: 30px;
+    height: 30px;
+  }
+
+  .title{
+    display: none;
+  } 
+}
